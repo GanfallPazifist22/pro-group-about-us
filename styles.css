@@ -1,165 +1,151 @@
-
+/* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #050132; /* Dark background */
-  color: rgb(255, 255, 255);
-}
-
-/* Navigation Bar */
-nav {
-  background-color: #000000; /* Darker navigation bar */
-  color: white;
-  padding: 15px 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style-type: square;
-  color: aqua;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: left;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #15ff00;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #f39c12;
-}
-
-/* Header Section */
-header {
-  background-color: #050228;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 100px 20px;
-}
-
-header h1 {
-  font-family: 'Press Start 2P', sans-serif;  /* Applying the pixel font */
-  font-size: 3.5rem;
-  margin-top: 70px;
-  margin-bottom: auto;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 2.5px;
-    -webkit-text-stroke-color: rgb(240, 157, 69);
-    
-}
-
-header img {
-  width: 30%;
-  max-width: 1000px;
-  margin-top: 5px;
-  border-radius: 15px;
-}
-
-/* Team Section */
-#team {
-  padding: 80px 20px;
-  text-align: center;
-}
-.bgteam{
-  image-resolution: 100%;  
-  opacity: 0.5;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 100;
-  z-index: -1;
-}
-.team-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.team-member {
-  width: 18%; /* Adjusted for 5 members */
-  background-color: #2c3e50;
-  padding: 20px;
-  border-radius: 10px;
-  border: 4px solid rgb(2, 255, 217);
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-}
-
-.team-member img {
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.team-member h3 {
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-.team-member p {
-  font-size: 1.1rem;
-}
-
-.team-member a {
-  color: #f39c12;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1rem;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.team-member a:hover {
-  color: #15ff00;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .team-member {
-    width: 45%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background*/
+    color: #e0e0e0; /* Light text color */
   }
-}
-
-@media (max-width: 480px) {
-  .team-member {
-    width: 100%;
+  nav {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
+  nav ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.927);
+   -webkit-text-stroke: 1px;
+   -webkit-text-stroke-color: rgb(255, 149, 2);
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: black; /* Light text for nav links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f01800; /* Highlight on hover */
+  }
+  
+  header {
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;  /* Applying the pixel font */
+    margin-top: 70px;
+    margin-bottom: auto;
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.927);
+   -webkit-text-stroke: 2.5px;
+   -webkit-text-stroke-color: rgb(255, 188, 3);
+  }
+  
   header h1 {
-    font-size: 2.5rem;
+    font-size: 3em;
+    font-weight: bolder;
   }
-}
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #000000;
-  color: rgb(85, 255, 6);
-}
+  header p {
+    font-size: 12px;
+  }
 
-footer p {
-  margin: 0;
-}
+  header button a {
+    color: #ecf0f1; /* Light text for nav links */
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  
+  header button {
+    background-color: #ffae00; /* Bright red button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  header button:hover {
+    background-color: #da9500; /* Darker red on hover */
+  }
+  
+  header img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  /* why Section */
+  #whys {
+   
+    background-color: #ca0000; /* Darker background for features */
+    text-align: center;
+  }
+  
+  .why-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .why-item {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* Dark background for each feature */
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid;
+    box-shadow: 10px 10px #850000;
+  }
+  
+  .why-item img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .why-item h3 {
+    color: #f3a600;
+    margin-top: 15px;
+  }
+  
+  .why-item p {
+    color: black; /* Lighter text for descriptions */
+  }
+  
+  @media (max-width: 768px) {
+    .why-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+ 
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f; /* Dark footer background */
+    color: white;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
